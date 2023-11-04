@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Based Smart Keychain Portal</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        #image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #keychain-details {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>IoT Based Smart Keychain Portal</h1>
+    
+    <h2>Control Panel</h2>
+    <button id="beepButton">Click Here</button>
+    <p>This keychain belongs to</p>
+    <p><strong>NAME: VAIDEHI DONGRE</strong></p>
+    <p><strong>CONTACT NO: 8097865994</strong></p>
+
+    <div id="image-container">
+        <img src="key.jpg" alt="Smart Keychain" width="300">
+    </div>
+    
+    <script>
+        document.getElementById("beepButton").addEventListener("click", function() {
+            alert("Beep Beep Message");
+        });
+    </script>
+</body>
+</html>
